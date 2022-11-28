@@ -6,7 +6,7 @@ for txt_file in pathlib.Path("C:\\Users\\example\\Desktop\\Test").glob('**/*.txt
     bitname = (entry_cleaned)  # saves as var
     with open(txt_file, "r") as openfile:  # Open file
         lines = len(openfile.readlines())
-        if lines < 12:
+        if lines < 24:
             skiplist = open("skiplist.txt", "a")
             skiplist.write(os.path.abspath(bitname)+ "\n") #Creates lists of skipped files.
             skiplist.close() # Closes File
